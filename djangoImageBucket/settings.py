@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+import sys
+
+sys.modules['fontawesome_free'] = __import__('fontawesome-free')
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -42,7 +45,10 @@ INSTALLED_APPS = [
     'profiles',
     #third party
     'crispy_forms',
+    'fontawesome_free',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

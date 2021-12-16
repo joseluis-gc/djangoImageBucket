@@ -1,0 +1,14 @@
+.not-visible{
+    display: none;
+}
+
+.red-btn{
+    background-color: #eb344f !important;
+    border: #eb344f !important;
+}
+
+
+.red-btn:hover{
+    background-color: #970a25 !important;
+    border: #eb344f !important;
+}
